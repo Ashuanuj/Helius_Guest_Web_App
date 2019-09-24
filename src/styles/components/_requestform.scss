@@ -1,0 +1,134 @@
+
+.input-bgColor{
+    background:#1F3C53;
+  }
+  
+  .Requestbtn{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: bold;
+    background: #5FBAFE linear-gradient(180deg, #5FBAFE, #567CF8) repeat-x;
+  }
+  
+.form-main{
+    padding: 3rem;
+    background: #142A3B;
+    min-height: 40vh;
+  }
+  
+  .cardbody-main{
+    border: 0px !important;
+    padding: 0px;
+    position: relative;
+  }
+  .cardImg{
+    border-radius: 0px;
+  }
+  .cardImgtext{
+    margin-top: -50px;
+    color: white;
+    p{
+      position: absolute;
+      z-index: 1;
+      top: 200px;
+      left: 172px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      font-family: 'NeoSansPro';
+    }
+    span{
+      position: absolute;
+      z-index: 1;
+      top: 230px;
+      left: 40px;
+      width: 80%;
+      text-align: center;
+      font-size: 18px;
+      font-family: 'Open Sans';
+    }
+  }
+
+  @media screen and (max-width:480px){
+    .cardImgtext{
+        margin-top: -80px;
+        color: white; 
+        p{
+            position: absolute;
+            z-index: 1;
+            top: 140px;
+            left: 172px;
+            text-align: center;
+            font-family: 'Neo Sans Pro';
+            font-size: 12px;
+            font-weight: 600;
+        }
+        span{
+            position: absolute;
+            z-index: 1;
+            top: 160px;
+            left: 40px;
+            width: 80%;
+            text-align: center;
+            font-family:'Open Sans';
+            font-size: 14px;
+            font-family: 'Open Sans';
+        }
+    }
+  }
+
+  // @media screen and (min-width:768px) and (max-width:998px){
+    @media screen and (max-width:998px){
+    .cardImgtext{
+        margin-top: -50px;
+        color: white;
+        
+        p{
+            position: absolute;
+            z-index: 1;
+            top: 400px;
+            left: 340px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 600;
+            font-family: 'NeoSansPro';
+        }
+        span{
+            position: absolute;
+            z-index: 1;
+            top: 460px;
+            left: 170px;
+            width: 60%;
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Open Sans';
+        }
+    }
+  }
+  @media screen and (max-width:1281px){
+      .cardImgtext{
+          margin-top: -50px;
+          color: white;
+          font-family: 'Open Sans', sans-serif;
+          p{
+              position: absolute;
+              z-index: 1;
+              top:126px;
+              left: 140px;
+              text-align: center;
+              font-size: 20px;
+              font-weight: 600;
+              font-family: 'NeoSansPro';
+          }
+          span{
+            position: absolute;
+            z-index: 1;
+            top: 166px;
+            left: 22px;
+            width: 90%;
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Open Sans';
+      }
+  }
+}

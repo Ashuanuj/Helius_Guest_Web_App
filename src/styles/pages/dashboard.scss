@@ -1,0 +1,36 @@
+
+.ServicePageMain {
+    .card{
+        color: white;
+        background-color: #1F3C53;
+        border-radius: 10px;
+    }
+    .card:hover{
+        border-color: $blue;
+    }
+}
+
+.card-serv-main{
+    .card-img-left {
+        background: linear-gradient(to top, #5FBAFE, #567CF8);
+        margin: 10px;
+        border-radius: 14px;
+        padding: 10px;
+    }
+    .card-body{
+        
+        .card-title{
+            font-family: 'Neo Sans Pro';
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .card-text{
+            font-family: 'Open Sans';
+            font-size: 13px;
+            color: #A2B0BA;
+
+        }
+    }
+}
