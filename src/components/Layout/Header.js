@@ -14,7 +14,7 @@ import {
   Nav,
   Navbar,
   NavItem,
-  NavLink,
+  // NavLink,
   // Popover,
   // PopoverBody,
   // ListGroupItem,
@@ -22,7 +22,7 @@ import {
 } from 'reactstrap';
 import bn from 'utils/bemnames';
 import { FaShoppingCart } from 'react-icons/fa';
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 const bem = bn.create('header');
@@ -111,7 +111,7 @@ class Header extends React.Component {
                 <Notifications notificationsData={notificationsData} />
               </PopoverBody>
             </Popover> */}
-            <NavLink  to="/checkout"><span> <FaShoppingCart size={25} style={{color: '#fff'}}/></span></NavLink>
+            <Link to="/checkout"><span> <FaShoppingCart size={25} style={{color: '#fff'}}/></span></Link>
           </NavItem>
 
           {/* <NavItem>

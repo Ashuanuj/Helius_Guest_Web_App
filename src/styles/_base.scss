@@ -2,7 +2,7 @@
 // @import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);
 
 @font-face {
-  font-family: "NeoSans, NeoSansPro, OpenSans";
+  font-family: Neo Sans, Neo Sans Pro, 'Open Sans';
   src: url("../components/assets/fonts/NeoSansPro-Medium.otf");
   src: url("../components/assets/fonts/NeoSansPro-Regular.otf");
   src: url("../components/assets/fonts/OpenSans-Regular.ttf");
@@ -35,8 +35,8 @@ button,
 .alert {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: Poppins, Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-family: Neo Sans Pro, "Medium, Regular";
+  // font-family: Poppins, Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Neo Sans ,Neo Sans Pro,"Neo Sans ,Neo Sans Pro OpenSans" "Medium, Regular";
   font-weight: $font-weight-normal;
 }
 
@@ -47,4 +47,10 @@ button,
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+}
+html,body{
+  margin: 0;
+  padding:0;
+  height:100%;
+  // background: #142A3B;
 }

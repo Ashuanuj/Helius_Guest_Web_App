@@ -41,7 +41,7 @@ const navRequest =[
 ];
 
 const pageContents = [
-  {  to: '/logout', name: 'logout', exact: false, Icon: MdSettingsPower  }
+  {  to: '/', name: 'logout', exact: false, Icon: MdSettingsPower  }
 ];
 
 const navItems = [

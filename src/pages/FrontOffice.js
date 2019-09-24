@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Row,Col,Card,Media} from 'reactstrap';
 import Page from '../components/Page';
 import {  MdKeyboardArrowRight } from 'react-icons/md';
+import {Link} from 'react-router-dom';
 
 class FrontOffice extends Component {
     render() {
@@ -14,6 +15,7 @@ class FrontOffice extends Component {
         >
          <Row className="ServicePageMain">
             <Col lg={4} md={6} sm={6} xs={12} className="mb-3">
+            <Link to="/wakeup">
             <Card className="flex-row front-office-main">
             <Media className="mediaMain">
                 <Media left>
@@ -30,6 +32,7 @@ class FrontOffice extends Component {
                 </Media>
             </Media>
             </Card> 
+            </Link>
             </Col>
             <Col lg={4} md={6} sm={6} xs={12} className="mb-3">
             <Card className="flex-row front-office-main">

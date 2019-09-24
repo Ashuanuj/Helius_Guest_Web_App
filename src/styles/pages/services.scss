@@ -9,6 +9,9 @@
     .card:hover{
         border-color: $blue;
     }
+    a{
+        text-decoration: none;
+    }
 }
 .card-serv-main{
     .mediaMain{
@@ -26,7 +29,8 @@
                 font-style: regular;
                 margin-top: 10px;
             .media-heading{
-                font-size: 16px;
+                font-size: 14px;
+                font-family: 'Neo Sans Pro,Medium';
                 font-weight: 500;
                 margin-bottom: 0.5rem;
                 margin-top: 0.5rem;
@@ -51,7 +55,7 @@
     }
 }
 
-// SubCategory Page
+// SubCategory Page Add pages
 
 .SubcategoryMain {
         .media-left{
@@ -64,10 +68,10 @@
         }
         .media-body{
                 font-size: 13px;
-                font-family: 'Open Sans';
                 margin-top: 10px;
             .media-heading{
-                font-size: 16px;
+                font-size: 14px;
+                font-family: 'Neo Sans Pro,Medium';
                 font-weight: 500;
                 margin-bottom: 0.2rem;
                 // margin-top: 0.2rem;
@@ -118,9 +122,31 @@
             }
         }
 }
+//Add Btn with continue
+.addItem-div{
+    .ContinueBtn{
+       background: #5FBAFE linear-gradient(180deg, #5FBAFE, #567CF8) repeat-x;
+       float: right;
+       margin-top: -24px;
+    }
+    span{
+        float: left;
+    }
+    background: #142A3B;
+    padding: 24px;
+    border: 1px solid #132431aa;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
 .col-main:hover{
     border-color: $blue;
 }
+
+
 
 @media screen and (max-width:480px){
     //Checkout table
@@ -162,12 +188,26 @@
      //Wake up Request
      .WakeupRequestBtn-div{
          width: 100%;
+         flex-direction: row;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
         .btnCancel{
-            width: 30%;
-            margin-right: 0px;
+            width: 100%;
+            // margin-right: 0px;
+            margin: 0 !important;
+            border-radius: 0px;
         }
         .btnReqt{
-            width: 70%;
+            width: 100%;
+            border-radius: 0px;
+        }
+        //Add Item Continue btn
+        .addItem-div{
+            flex-direction: row;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
         }
     }
 

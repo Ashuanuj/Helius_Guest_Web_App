@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Row,Col,Card,Media,Button } from 'reactstrap';
+// import{Link} from 'react-router-dom';
 
 import SubImage1 from '../../components/assets/img/icons/subcategory/SubImage1.png';
 import SubImage2 from '../../components/assets/img/icons/subcategory/SubImage2.png';
@@ -27,7 +28,9 @@ class SubCategory1 extends Component {
                     <span className="items-list"> 2 Idly + 1 Vada </span>
                     <b> $4.00</b>
                 </Media>
-                <Button className="addbtn">Add</Button>
+                {/* <Link to="/subcategory2"> */}
+                  <Button className="addbtn">Add</Button>
+                {/* </Link> */}
            </Media>
           </Card> 
         </Col>
@@ -102,6 +105,7 @@ class SubCategory1 extends Component {
         </Col>
        </Row>
 
+          
       </div>
     );
   }

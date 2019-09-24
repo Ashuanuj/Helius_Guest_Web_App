@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import {Col, Button, Form, FormGroup, Input } from 'reactstrap';
+import {Link} from 'react-router-dom';
 
 class RequestForm extends React.Component {
       get isRequest() {
@@ -24,10 +25,8 @@ render(){
         dobInputProps
     } = this.props
     return(
-      <div>
-        
-      
-               <Col className="form-main " >
+     
+              <Col className="form-main">
               <Form onSubmit={this.handleSubmit} >
                     <FormGroup>
                         {/* <Label for={usernameLabel}>{usernameLabel}</Label> */}
@@ -42,18 +41,26 @@ render(){
                         <Input {...dobInputProps} className="input-bgColor"/>
                     </FormGroup>
                     <hr />
-                    <Button
+                    {/* <Button
                         size="lg"
                         className="Requestbtn bg-gradient-Requestbtn border-0"
                         block
                         onClick={this.handleSubmit}
                         >
                             REQUEST ACCESS
+                    </Button> */}
+                    <Link to="/dashboard">
+                    <Button
+                        size="lg"
+                        className="Requestbtn bg-gradient-Requestbtn border-0"
+                        block
+                        >
+                            REQUEST ACCESS
                     </Button>
+                    </Link>
               </Form>
               </Col>
-
-      </div>
+      
     );
   }
 }
@@ -71,7 +78,7 @@ RequestForm.propTypes = {
 
 RequestForm.defaultProps = {
     authState: 'REQUEST_SUCCESS',
-    usernameLabel: 'Name',
+    usernameLabel: 'Bansal',
     usernameInputProps: {
       type: 'text',
       placeholder: 'Name',

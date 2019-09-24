@@ -1,8 +1,9 @@
 import React from 'react';
-import {Col, Card, CardImg,CardText} from 'reactstrap';
+import {Col, Card, CardImg} from 'reactstrap';
 import RequestForm, {STATE_REQUEST_SUCCESS} from '../components/RequestForm'
 import componentImg from '../components/assets/img/bg/component.png'
-import Footer from '../components/Layout/Footer'
+import Footer from '../components/Layout/Footer';
+
 
 class RequestFormPage extends React.Component {
     handleAuthState = authState => {
@@ -14,22 +15,33 @@ class RequestFormPage extends React.Component {
     render() {
         return (
           <div>
-            <Col className="pz" sm={{ size: 'auto', offset: 0 }} md={{ size: 'auto', offset: 0 }} lg={{ size: 4, offset: 4 }} >
+            {/* <Container>
+            <Row> */}
+                   
+            <Col className="pz mt-3" sm={{ size: 'auto', offset: 0 }} md={{ size: 'auto', offset: 0 }} lg={{ size: 4, offset: 4 }} >
               <Card body className="cardbody-main" >
                 <CardImg 
                   src={componentImg}
                   className="cardImg"
                 />
-                <CardText className="cardImgtext"><p>Welcome</p>
-                <span>Are you ready to enjoy a whole new guest experience without limits? Let’s go!</span>
-                </CardText>
+                <div className="cardImgtext">
+                <p className="para">Welcome</p>
+                <p className="subpara">Are you ready to enjoy a whole new guest experience without limits? Let’s go!</p>
+                </div>
+                
                 <RequestForm
                   authState={this.props.authState}
                   onChangeAuthState={this.handleAuthState}
                 />
+                  
+                
               </Card>
               <Footer/>
             </Col>
+            {/* </Row>
+            </Container> */}
+       
+        
           </div>
        
         );

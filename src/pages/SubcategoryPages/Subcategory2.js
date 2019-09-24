@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row,Col,Card,Media,Button } from 'reactstrap';
 
+
 import SubImage1 from '../../components/assets/img/icons/subcategory/SubImage1.png';
 import SubImage2 from '../../components/assets/img/icons/subcategory/SubImage2.png';
 import SubImage3 from '../../components/assets/img/icons/subcategory/SubImage3.png';
@@ -49,7 +50,9 @@ class SubCategory2 extends Component {
                     <span className="items-list"> 2 Bread slices with butter </span>
                     <b> $4.00</b>
                 </Media>
-                <Button className="addbtn">Add</Button>
+             
+                  <Button className="addbtn">Add</Button>
+              
            </Media>
           </Card>
         </Col>
@@ -106,6 +109,16 @@ class SubCategory2 extends Component {
         </Col>
        </Row>
 
+                <div className="addItem-div">
+                 <span>2 Items | $22.00</span>
+                        <Button
+                            size="lg"
+                            className="ContinueBtn"
+                            >
+                               Continue
+                        </Button>
+                      
+                 </div>
       </div>
     );
   }
