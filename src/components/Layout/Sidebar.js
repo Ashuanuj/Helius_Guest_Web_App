@@ -5,7 +5,7 @@ import React from 'react';
 // import { FaCloud } from 'react-icons/fa';
 import {
   MdDashboard,
-  MdKeyboardArrowDown,
+  // MdKeyboardArrowDown,
   MdPages,
   MdSettingsPower,
   MdTimer,
@@ -39,11 +39,11 @@ import bn from 'utils/bemnames';
 // ];
 
 const navRequest =[
-  {  to: '/wakeup', name: 'WakeUp', exact: false, Icon: MdTimer  },
+  {  to: '/requestmain', name: 'Request', exact: false, Icon: MdTimer  },
 ];
 
 const pageContents = [
-  {  to: '/', name: 'logout', exact: false, Icon: MdSettingsPower  }
+  {  to: '/', name: 'Logout', exact: false, Icon: MdSettingsPower  }
 ];
 
 const navItems = [
@@ -105,14 +105,14 @@ class Sidebar extends React.Component {
               <NavItem key={index} className={bem.e('nav-item')}>
                 <BSNavLink
                   id={`navItem-${name}-${index}`}
-                  className="text-uppercase"
+                  className=""
                   tag={NavLink}
                   to={to}
                   activeClassName="active"
                   exact={exact}
                 >
                   <Icon className={bem.e('nav-item-icon')} />
-                  <span className="">{name}</span>
+                  <span className="sidebar-text">{name}</span>
                 </BSNavLink>
               </NavItem>
             ))}
@@ -172,7 +172,7 @@ class Sidebar extends React.Component {
               className={bem.e('nav-item')} key={index}
               onClick={this.handleClick('Pages')}
             >
-              <BSNavLink className={bem.e('nav-item-collapse text-uppercase')}  
+              <BSNavLink className={bem.e('nav-item-collapse')}  
                id={`navItem-${name}-${index}`}
                tag={NavLink}
                to={to}
@@ -181,9 +181,9 @@ class Sidebar extends React.Component {
               >
                 <div className="d-flex">
                   <MdPages className={bem.e('nav-item-icon')} />
-                  <span className="">My Request</span>
+                  <span className="sidebar-text">My Request</span>
                 </div>
-                <MdKeyboardArrowDown
+                {/* <MdKeyboardArrowDown
                   className={bem.e('nav-item-icon')}
                   style={{
                     padding: 0,
@@ -193,7 +193,7 @@ class Sidebar extends React.Component {
                     transitionDuration: '0.3s',
                     transitionProperty: 'transform',
                   }}
-                />
+                /> */}
               </BSNavLink>
             </NavItem>
              ))}
@@ -219,14 +219,14 @@ class Sidebar extends React.Component {
                 <NavItem key={index} className={bem.e('nav-item')}>
                   <BSNavLink
                     id={`navItem-${name}-${index}`}
-                    className="text-uppercase"
+                    className=""
                     tag={NavLink}
                     to={to}
                    activeClassName="active"
                     exact={exact}
                   >
                      <Icon className={bem.e('nav-item-icon')} />
-                    <span className="">{name}</span>
+                    <span className="sidebar-text">{name}</span>
                    </BSNavLink>
                 </NavItem>
               ))} 

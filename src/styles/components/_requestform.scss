@@ -1,22 +1,40 @@
 .card{
   background-color: none;
 }
+// input{
+//   color: #fff;
+// }
+
+.form-control{
+  background-color:#1F3C53 !important;
+  border: 1px solid #1F3C53;
+  color:#fff;
+  height:50px;
+  font-size: 13px;
+  font-family: 'Neo Sans Pro,Regular'
+}
 
 .input-bgColor{
-    background:#1F3C53;
-    border: 1px solid #1F3C53;
-  }
+  color:#A2B0BA;
+}
+.input-bgColor:hover{
+  color:#A2B0BA;
+}
   
   .Requestbtn{
     font-family: 'Neo Sans Pro,Medium' ;
     font-size: 13px;
     font-weight: bold;
+    color: #fff;
+    height:52px;
     background: #5FBAFE linear-gradient(180deg, #5FBAFE, #567CF8) repeat-x;
- 
+  }
+  .Requestbtn:hover{
+    background: #5FBAFE;
   }
   
 .form-main{
-    padding: 3rem;
+    padding: 2rem;
     background: #142A3B;
     // min-height: 40vh;
     a{

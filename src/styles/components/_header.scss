@@ -22,6 +22,10 @@
 }
 .bgNav{
   background: #1F3C53;
+  position: fixed;
+  width:100%;
+  z-index: 6;
+  
   .Nav-Name{
     text-align: center;
     color: white;

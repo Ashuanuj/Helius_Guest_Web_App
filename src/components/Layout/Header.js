@@ -73,8 +73,8 @@ class Header extends React.Component {
     // const { isNotificationConfirmed } = this.state;
 
     return (
-      <Navbar expand className={bem.b('bgNav')}>
-        <Nav navbar className="mr-2">
+      <Navbar expand navbar-inverse className={bem.b('bgNav')}>
+        <Nav navbar navbar-fixed-top   className="mr-2">
           <Button className="ToggleBtn btn-outline-info btn btn-info"  onClick={this.handleSidebarControlButton}>
             <MdClearAll size={25} />
           </Button>
