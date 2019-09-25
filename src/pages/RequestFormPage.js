@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Card, CardImg} from 'reactstrap';
+import {Col, Row, Card, CardImg} from 'reactstrap';
 import RequestForm, {STATE_REQUEST_SUCCESS} from '../components/RequestForm'
 import componentImg from '../components/assets/img/bg/component.png'
 import Footer from '../components/Layout/Footer';
@@ -15,11 +15,12 @@ class RequestFormPage extends React.Component {
     render() {
         return (
           <div>
-            {/* <Container>
-            <Row> */}
-                   
-            <Col className="pz mt-3" sm={{ size: 'auto', offset: 0 }} md={{ size: 'auto', offset: 0 }} lg={{ size: 4, offset: 4 }} >
-              <Card body className="cardbody-main" >
+            {/* <Container> */}
+            <Row className="HomeMain"> 
+        
+            <Col className="pz" sm={{ size: 'auto', offset: 0 }} md={{ size: 'auto', offset: 3 }} lg={{ size: 4, offset: 4 }} >
+             
+              <Card body className="cardbody-main">
                 <CardImg 
                   src={componentImg}
                   className="cardImg"
@@ -34,12 +35,12 @@ class RequestFormPage extends React.Component {
                   onChangeAuthState={this.handleAuthState}
                 />
                   
-                
-              </Card>
+                </Card>
+             
               <Footer/>
-            </Col>
-            {/* </Row>
-            </Container> */}
+             </Col>
+           </Row>
+             {/* </Container> */}
        
         
           </div>

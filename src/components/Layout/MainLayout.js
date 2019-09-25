@@ -14,6 +14,7 @@ class MainLayout extends React.Component {
     return document
       .querySelector('.cr-sidebar')
       .classList.contains('cr-sidebar--open');
+     
   }
 
   componentWillReceiveProps({ breakpoint }) {
@@ -87,12 +88,13 @@ class MainLayout extends React.Component {
         .classList.add('cr-sidebar--open');
     }
     document.querySelector('.cr-sidebar').classList.remove('cr-sidebar--open');
+ 
   }
 
   render() {
     const { children } = this.props;
     return (
-      <main className="cr-app bg-light">
+      <main className="cr-app col-sm-auto offset-md-0  col-md-auto offset-md-0 col-lg-0 offset-lg-0">
         <Sidebar />
         <Content fluid onClick={this.handleContentClick}>
           <Header />

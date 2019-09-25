@@ -28,13 +28,13 @@ export default class CheckoutPage extends React.Component{
                 <div className="WakeupRequestBtn-div">
                         <Button
                             size="lg"
-                            className="btnCancel"
+                            className="btnCancel btn-outline-info"
                             >
                                Cancel
                         </Button>
                         <Button
                             size="lg"
-                            className="btnReqt bg-gradient-Requestbtn border-0"
+                            className="btnReqt bg-gradient-Requestbtn btn-outline-info border-0"
                             >
                                Request
                         </Button>

@@ -83,7 +83,7 @@ export default class CheckoutPage extends React.Component{
                     <div className="confirmBtn-div">
                         <Button
                             size="lg"
-                            className="confirmBtn bg-gradient-Requestbtn border-0"
+                            className="confirmBtn bg-gradient-Requestbtn btn-outline-info border-0"
                             block
                             onClick={this.toggle}
                             >

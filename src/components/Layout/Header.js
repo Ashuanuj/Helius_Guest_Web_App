@@ -44,7 +44,7 @@ class Header extends React.Component {
   state = {
     // isOpenNotificationPopover: false,
     // isNotificationConfirmed: false,
-    isOpenUserCardPopover: false,
+    // isOpenUserCardPopover: false,
   };
 
   // toggleNotificationPopover = () => {
@@ -57,17 +57,16 @@ class Header extends React.Component {
   //   }
   // };
 
-  toggleUserCardPopover = () => {
-    this.setState({
-      isOpenUserCardPopover: !this.state.isOpenUserCardPopover,
-    });
-  };
+  // toggleUserCardPopover = () => {
+  //   this.setState({
+  //     isOpenUserCardPopover: !this.state.isOpenUserCardPopover,
+  //   });
+  // };
 
   handleSidebarControlButton = event => {
     event.preventDefault();
     event.stopPropagation();
-
-    document.querySelector('.cr-sidebar').classList.toggle('cr-sidebar--open');
+     document.querySelector('.cr-sidebar').classList.toggle('cr-sidebar--open');
   };
 
   render() {
@@ -76,9 +75,10 @@ class Header extends React.Component {
     return (
       <Navbar expand className={bem.b('bgNav')}>
         <Nav navbar className="mr-2">
-          <Button className="ToggleBtn btn-outline-info btn-info"  onClick={this.handleSidebarControlButton}>
+          <Button className="ToggleBtn btn-outline-info btn btn-info"  onClick={this.handleSidebarControlButton}>
             <MdClearAll size={25} />
           </Button>
+
         </Nav>
         <Nav className="Nav-Name">
           Welcome Mr.Bansal

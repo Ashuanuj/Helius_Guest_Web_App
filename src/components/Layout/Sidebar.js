@@ -8,12 +8,14 @@ import {
   MdKeyboardArrowDown,
   MdPages,
   MdSettingsPower,
-  MdTimer
+  MdTimer,
+  // MdClose
 } from 'react-icons/md';
 import { NavLink } from 'react-router-dom';
 import {
   // UncontrolledTooltip,
   // Collapse,
+  // Button,
   Nav,
   NavItem,
   NavLink as BSNavLink,
@@ -71,11 +73,20 @@ class Sidebar extends React.Component {
     });
   };
 
+  // handleSidebarControlButton = event => {
+  //   event.preventDefault();
+  //   event.stopPropagation();
+  //    document.querySelector('.cr-sidebar').classList.toggle('cr-sidebar--close');
+  // };
+
   render() {
     return (
       <aside className={bem.b()} data-image="" >
         <div className={bem.e('background')} />
         <div className={bem.e('content')}>
+          {/* <Button className="CloseBtn btn-outline-info btn-info"  onClick={this.handleSidebarControlButton}>
+            <MdClose size={25} />
+          </Button> */}
           {/* <Navbar> */}
             <div className="sidebarImg-main">
               <img

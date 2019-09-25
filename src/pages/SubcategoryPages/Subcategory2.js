@@ -113,7 +113,7 @@ class SubCategory2 extends Component {
                  <span>2 Items | $22.00</span>
                         <Button
                             size="lg"
-                            className="ContinueBtn"
+                            className="ContinueBtn btn-outline-info"
                             >
                                Continue
                         </Button>

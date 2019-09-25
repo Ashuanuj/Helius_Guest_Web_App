@@ -52,7 +52,7 @@ render(){
                     <Link to="/dashboard">
                     <Button
                         size="lg"
-                        className="Requestbtn bg-gradient-Requestbtn border-0"
+                        className="Requestbtn bg-gradient-Requestbtn btn-outline-info border-0"
                         block
                         >
                             REQUEST ACCESS

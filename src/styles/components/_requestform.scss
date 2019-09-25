@@ -1,3 +1,6 @@
+.card{
+  background-color: none;
+}
 
 .input-bgColor{
     background:#1F3C53;
@@ -30,9 +33,10 @@
     text-align: center;
     margin-bottom: 0px;
   }
-  
+ 
 .cardbody-main{
-    border: 1px solid #142A3B !important;
+    background-color: none;
+    border:0px !important;
     padding: 0px;
     position: relative;
 }
@@ -65,9 +69,12 @@
   }
 
   @media screen and (min-width:360px) and (max-width:640px){
+
+    .card{
+      background-color: none;
+    }
     .cardbody-main{
       position: relative;
-      border: 1px solid #142A3B !important;
     }
     .cardImgtext{
         margin-top:9em;
@@ -104,12 +111,12 @@
       }
     .cardImgtext{
         // margin-top: -50px;
-
-        color: white;
         position: absolute;
+        color: white;
         z-index: 1;
-        top: 285px;
-        left: 138px;
+       
+        // top: 285px;
+        // left: 138px;
         .para{
             // top: 400px;
             // left: 340px;
