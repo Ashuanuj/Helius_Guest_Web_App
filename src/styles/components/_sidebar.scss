@@ -135,11 +135,12 @@
        border-color: #10b7d2; 
       }
       &:active{
-        background: #142A3B;
+        // background: #142A3B;
+        background: rgba(theme-color(light), 0.15);
       }
-      .active{
-        background: #142A3B !important;
-      }
+      // .active{
+      //   background: #142A3B !important;
+      // }
     }
     .sub{
       padding-left: 40px;

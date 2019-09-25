@@ -1,4 +1,4 @@
-import { Content, Footer, Header, Sidebar } from 'components/Layout';
+import { Content, Header, Sidebar } from 'components/Layout';
 import React from 'react';
 
 // import {
@@ -99,7 +99,7 @@ class MainLayout extends React.Component {
         <Content fluid onClick={this.handleContentClick}>
           <Header />
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </Content>
 
         {/* <NotificationSystem
