@@ -47,26 +47,26 @@ class MainLayout extends React.Component {
   //       title: <MdLoyalty />,
   //       message:
   //         'Reduction is carefully designed template powered by React and Bootstrap4!',
-  //       level: 'info',
-  //     });
-  //   }, 2500);
-  // }
+  // //       level: 'info',
+  // //     });
+  // //   }, 2500);
+  // // }
 
-  // close sidebar when
-  handleContentClick = event => {
-    // close sidebar if sidebar is open and screen size is less than `md`
-    if (
-      MainLayout.isSidebarOpen() &&
-      (this.props.breakpoint === 'xs' ||
-       this.props.breakpoint === 'sm')
-      ){
-      //   ( this.props.breakpoint === 'xs' ||
-      //     this.props.breakpoint === 'sm' ||
-      //     this.props.breakpoint === 'md')
-      //   ) 
-      this.openSidebar('close');
-    }
-  };
+  // // close sidebar when
+  // handleContentClick = event => {
+  //   // close sidebar if sidebar is open and screen size is less than `md`
+  //   if (
+  //     MainLayout.isSidebarOpen() &&
+  //     (this.props.breakpoint === 'xs' ||
+  //      this.props.breakpoint === 'sm')
+  //     ){
+  //     //   ( this.props.breakpoint === 'xs' ||
+  //     //     this.props.breakpoint === 'sm' ||
+  //     //     this.props.breakpoint === 'md')
+  //     //   ) 
+  //     this.openSidebar('close');
+  //   }
+  // };
 
   checkBreakpoint(breakpoint) {
     switch (breakpoint) {

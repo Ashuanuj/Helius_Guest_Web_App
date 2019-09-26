@@ -19,7 +19,7 @@ class SubCategory1 extends Component {
           <Card className="">
           <Media className="SubcategoryMain">
               <Media left>
-                <Media object src={SubImage2} alt="image"/>
+                <Media object src={SubImage1} alt="image"/>
               </Media>
                 <Media body>
                   <Media heading>
@@ -98,7 +98,7 @@ class SubCategory1 extends Component {
           <Card className="">
           <Media className="SubcategoryMain">
               <Media left>
-                <Media object src={SubImage2} alt="image"/>
+                <Media object src={SubImage3} alt="image"/>
               </Media>
                 <Media body>
                   <Media heading>
