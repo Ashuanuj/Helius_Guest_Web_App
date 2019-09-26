@@ -25,8 +25,7 @@
         }
         .media-body{
                 font-size: 13px;
-                font-family: 'Open_Sans';
-                font-style: regular;
+                font-family: 'Neo_Sans_Pro';
                 margin-top: 10px;
             .media-heading{
                 font-size: 14px;
@@ -253,7 +252,12 @@
 //Checkout page
 // table one
 .TableMain{
+    
     td{
+    font-family: 'Neo_Sans_Pro';
+    font-size: 14px;
+    font-weight: 300px;
+
         .media-object{
             width: 15px;
             height: 15px;
@@ -325,16 +329,27 @@
     }
     .note-text{
         font-family: "Open_Sans";
-        font-size: 14px;
+        font-size: 12px;
         padding: 10px 20px;
         color: #A2B0BA;
+        td{
+            width: 100%;
+        }
     }
     .bill-amt{
+        .totalamt{
         color: #fff;
         font-size: "Open_Sans";
-        .totaltext{
-          font-weight: bold;
+          font-weight: 400;
+          font-size: 13px;
         }
+        .totaltext{
+            color: #fff;
+          font-size: 'Neo_Sans';
+          font-weight: 400;
+          font-size: 14px;
+        }
+      
     }
   }
 }

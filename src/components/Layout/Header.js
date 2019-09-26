@@ -118,7 +118,7 @@ export default function TemporaryDrawer() {
         </Link>
       </List>
       <List>
-      <Link to="/logout">
+      <Link to="/">
         {['Logout'].map((text, index) => (
           <ListItem button key={text}>
             {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}

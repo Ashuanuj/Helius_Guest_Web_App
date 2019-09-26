@@ -76,16 +76,16 @@ export default class Active extends React.Component{
                         </tr>
                         <tr>
                             <td>  
-                               <Media object src={vegImg} alt="image"/> Idly Vada
+                               <Media object src={vegImg} alt="image"/> Bread Toast
                             </td>
-                            <td>Thornton</td>
+                            <td>-</td>
                             <td> $4.00 </td>
                         </tr>
                         <tr>
                             <td>  
                                  <Media object src={NonvegImg} alt="image"/> Omelette 
                             </td>
-                            <td>Omelette</td>
+                            <td>-</td>
                             <td> $3.00 </td>
                         </tr>
                         </tbody>

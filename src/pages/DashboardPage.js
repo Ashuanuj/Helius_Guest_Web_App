@@ -26,7 +26,7 @@ class DashboardPage extends React.Component {
             <CardImg
               className="card-img-left"
               src={SwipeImage}
-              style={{width:85 , height:80}}
+              style={{width:60 , height:60}}
             />
             <CardBody className="pd-10 ">
               <CardTitle>House Keeping</CardTitle>
@@ -44,7 +44,7 @@ class DashboardPage extends React.Component {
             <CardImg
               className="card-img-left"
               src={BellImage}
-              style={{width:80 , height:80}}
+              style={{width:60 , height:60}}
             />
             <CardBody className="pd-10">
               <CardTitle>Front Office </CardTitle>
@@ -63,7 +63,7 @@ class DashboardPage extends React.Component {
             <CardImg
               className="card-img-left"
               src={ForkImage}
-              style={{width:80 , height:80}}
+              style={{width:60 , height:60}}
             />
             <CardBody className="pd-10">
               <CardTitle>All Day Dining</CardTitle>
@@ -82,7 +82,7 @@ class DashboardPage extends React.Component {
             <CardImg
               className="card-img-left"
               src={FileImage}
-              style={{width:80 , height:80}}
+              style={{width:60 , height:60}}
             />
             <CardBody className="pd-10">
               <CardTitle>Bed, Bath & More </CardTitle>
@@ -102,7 +102,7 @@ class DashboardPage extends React.Component {
             <CardImg
               className="card-img-left"
               src={FileImage}
-              style={{width:80 , height:80}}
+              style={{width:60 , height:60}}
             />
             <CardBody className="pd-10">
               <CardTitle>  Other Services </CardTitle>

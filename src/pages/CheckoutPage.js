@@ -50,16 +50,16 @@ export default class CheckoutPage extends React.Component{
                         </tr>
                         <tr>
                             <td>  
-                               <Media object src={vegImg} alt="image"/> Idly Vada
+                               <Media object src={vegImg} alt="image"/> Bread Toast
                             </td>
-                            <td>Thornton</td>
+                            <td>-</td>
                             <td> $4.00 </td>
                         </tr>
                         <tr>
                             <td>  
                                  <Media object src={NonvegImg} alt="image"/> Omelette 
                             </td>
-                            <td>Omelette</td>
+                            <td>-</td>
                             <td> $3.00 </td>
                         </tr>
                         </tbody>
@@ -76,7 +76,7 @@ export default class CheckoutPage extends React.Component{
                             <tr className="note-text"> <td>Instructions? E.g. Don’t ring the doorbell </td></tr>
                             <tr className="bill-amt">
                                 <td className="totaltext">Total Bill</td>
-                                <td> $ 11.00 </td>
+                                <td className="totalamt"> $ 11.00 </td>
                             </tr>
                         </tbody>
                     </Table>
