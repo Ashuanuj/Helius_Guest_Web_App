@@ -16,7 +16,7 @@ class SubCategory2 extends Component {
 
      <Row className="ServicePageMain">
         <Col lg={4} md={6} sm={6} xs={12} className="">
-          <Card className="flex-row">
+          <Card className="">
           <Media className="SubcategoryMain">
               <Media left>
                 <Media object src={SubImage2} alt="image"/>
@@ -38,7 +38,7 @@ class SubCategory2 extends Component {
         </Col>
 
         <Col lg={4} md={6} sm={6} xs={12} className="">
-          <Card className="flex-row">
+          <Card className="">
            <Media className="SubcategoryMain">
               <Media left>
                 <Media object src={SubImage2} alt="image"/>
@@ -57,7 +57,7 @@ class SubCategory2 extends Component {
           </Card>
         </Col>
         <Col lg={4} md={6} sm={6} xs={12} className="">
-          <Card className="flex-row">
+          <Card className="">
            <Media className="SubcategoryMain">
               <Media left>
                 <Media object src={SubImage3} alt="image"/>
@@ -74,7 +74,7 @@ class SubCategory2 extends Component {
           </Card>
         </Col>
         <Col lg={4} md={6} sm={6} xs={12} className="">
-          <Card className="flex-row">
+          <Card className="">
            <Media className="SubcategoryMain">
               <Media left>
                 <Media object src={SubImage1} alt="image"/>
@@ -91,7 +91,7 @@ class SubCategory2 extends Component {
           </Card>
         </Col>
         <Col lg={4} md={6} sm={6} xs={12} className="">
-          <Card className="flex-row">
+          <Card className="">
           <Media className="SubcategoryMain">
               <Media left>
                 <Media object src={SubImage2} alt="image"/>

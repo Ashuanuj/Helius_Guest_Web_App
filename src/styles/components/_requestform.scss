@@ -16,10 +16,14 @@
 .form-control:hover{
   border: 1px solid #1F3C53;
 }
-
-.input-bgColor:focus{
-  color:#fff;
+.form-control:focus{
+  border: none;
+  transition:none;
 }
+
+// .input-bgColor:focus{
+//   color:#fff;
+// }
 .input-bgColor:hover{
   color:#A2B0BA;
   border: 1px solid #1F3C53;

@@ -16,7 +16,7 @@ class SubCategory1 extends Component {
 
      <Row className="ServicePageMain">
         <Col lg={4} md={6} sm={6} xs={12} className="">
-          <Card className="flex-row">
+          <Card className="">
           <Media className="SubcategoryMain">
               <Media left>
                 <Media object src={SubImage2} alt="image"/>
@@ -29,14 +29,16 @@ class SubCategory1 extends Component {
                     <b> $4.00</b>
                 </Media>
                 {/* <Link to="/subcategory2"> */}
+                <Media right>
                   <Button className="addbtn">Add</Button>
+                </Media>
                 {/* </Link> */}
            </Media>
           </Card> 
         </Col>
 
         <Col lg={4} md={6} sm={6} xs={12} className="">
-          <Card className="flex-row">
+          <Card className="">
            <Media className="SubcategoryMain">
               <Media left>
                 <Media object src={SubImage2} alt="image"/>
@@ -48,12 +50,14 @@ class SubCategory1 extends Component {
                     <span className="items-list"> 2 Bread slices with butter </span>
                     <b> $4.00</b>
                 </Media>
-                <Button className="addbtn">Add</Button>
+                <Media right>
+                  <Button className="addbtn">Add</Button>
+                </Media>
            </Media>
           </Card>
         </Col>
         <Col lg={4} md={6} sm={6} xs={12} className="">
-          <Card className="flex-row">
+          <Card className="">
            <Media className="SubcategoryMain">
               <Media left>
                 <Media object src={SubImage3} alt="image"/>
@@ -65,12 +69,14 @@ class SubCategory1 extends Component {
                     <span className="items-list"> Omelette </span>
                     <b> $3.00</b>
                 </Media>
-                <Button className="addbtn">Add</Button>
+                <Media right>
+                  <Button className="addbtn">Add</Button>
+                </Media>
            </Media>
           </Card>
         </Col>
         <Col lg={4} md={6} sm={6} xs={12} className="">
-          <Card className="flex-row">
+          <Card className="">
            <Media className="SubcategoryMain">
               <Media left>
                 <Media object src={SubImage1} alt="image"/>
@@ -82,12 +88,14 @@ class SubCategory1 extends Component {
                     <span className="items-list"> 2 Idly + 1 Vada </span>
                     <b> $4.00</b>
                 </Media>
-                <Button className="addbtn">Add</Button>
+                <Media right>
+                  <Button className="addbtn">Add</Button>
+                </Media>
            </Media>
           </Card>
         </Col>
         <Col lg={4} md={6} sm={6} xs={12} className="">
-          <Card className="flex-row">
+          <Card className="">
           <Media className="SubcategoryMain">
               <Media left>
                 <Media object src={SubImage2} alt="image"/>
@@ -99,7 +107,9 @@ class SubCategory1 extends Component {
                     <span className="items-list"> Omelette </span>
                     <b> $3.00</b>
                 </Media>
-                <Button className="addbtn">Add</Button>
+                <Media right>
+                  <Button className="addbtn">Add</Button>
+                </Media>
            </Media>
           </Card>
         </Col>

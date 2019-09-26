@@ -125,7 +125,7 @@ class Sidebar extends React.Component {
                     className=""
                     tag={NavLink}
                     to={to}
-                    activeClassName="active"
+                    activeClassName=""
                     exact={exact}
                   >
                      <Icon className={bem.e('nav-item-icon')} />

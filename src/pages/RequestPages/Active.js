@@ -62,39 +62,35 @@ export default class Active extends React.Component{
                         <tbody className="t-body">
                         <tr>
                             <td>  
-                               <Media object src={vegImg} alt="image"/> Idly Vada
+                               <Media object src={vegImg} alt="image"/> Idly Vada x 1
                             </td>
                             <td>  
-                                <div className="qtybtn"> 
-                                    <span className="minus">-</span>
-                                    {/* <span className="count"><input value="2"/></span> */}
-                                    <span className="count">2</span>
-                                    <span className="plus">+</span>
-                                </div>
+                              -
                             </td>
                             <td> $4.00 </td>
                         </tr>
                         <tr>
                             <td>  
-                               <Media object src={vegImg} alt="image"/> Bread Toast
+                               <Media object src={vegImg} alt="image"/> Bread Toast x 2 
                             </td>
-                            <td>-</td>
+                            <td> -</td>
                             <td> $4.00 </td>
                         </tr>
                         <tr>
                             <td>  
-                                 <Media object src={NonvegImg} alt="image"/> Omelette 
+                                 <Media object src={NonvegImg} alt="image"/> Omelette x 3
                             </td>
-                            <td>-</td>
+                            <td>- </td>
                             <td> $3.00 </td>
                         </tr>
                         </tbody>
                     </Table>
-                    <Table className="tableRadio">
+                    <Table responsive className="tableRadio">
                         <tbody className="radio-div">
                             <tr className="bill-amt">
                                 <td className="totaltext">Total Bill</td>
-                                <td> $ 11.00 </td>
+                                <td></td>
+                                <td className="totalamt"> $11.00 </td>
                             </tr>
                         </tbody>
                     </Table>
@@ -103,7 +99,7 @@ export default class Active extends React.Component{
                 </Col>
 
                 <Col md={6} sm={6} xs={12} className="mb-3">
-                    <Card className="flex-row requestTab-main">
+                    <Card className="requestTab-main">
                     <Media className="mediaMain">
                             <Media body>
                             <Media heading>
@@ -113,13 +109,13 @@ export default class Active extends React.Component{
                             <span className="sub-title2"> Request Received </span>
                             </Media>
                         <Media right>
-                        <MdKeyboardArrowRight/>
+                         <MdKeyboardArrowRight/>
                         </Media>
                     </Media>
                     </Card> 
                 </Col>
                 <Col md={6} sm={6} xs={12} className="mb-3">
-                    <Card className="flex-row requestTab-main">
+                    <Card className="requestTab-main">
                     <Media className="mediaMain">
                             <Media body>
                             <Media heading>

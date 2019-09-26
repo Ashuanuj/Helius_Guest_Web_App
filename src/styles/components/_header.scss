@@ -41,9 +41,9 @@
   .MuiIconButton-colorInherit{
     color: none;
   }
-  .button:focus{
-    outline: none;
-  }
+}
+.button:focus{
+  outline: 0px;
 }
 
 .ToggleBtn{

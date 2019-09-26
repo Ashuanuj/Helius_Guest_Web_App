@@ -16,7 +16,7 @@ class FrontOffice extends Component {
          <Row className="ServicePageMain">
             <Col lg={4} md={6} sm={6} xs={12} className="mb-3">
             <Link to="/wakeup">
-            <Card className="flex-row front-office-main">
+            <Card className="front-office-main">
             <Media className="mediaMain">
                 <Media left>
                     {/* <Media object src={Image1} alt="image"/> */}
@@ -35,7 +35,7 @@ class FrontOffice extends Component {
             </Link>
             </Col>
             <Col lg={4} md={6} sm={6} xs={12} className="mb-3">
-            <Card className="flex-row front-office-main">
+            <Card className="front-office-main">
             <Media className="mediaMain">
             
                     <Media body>
@@ -51,7 +51,7 @@ class FrontOffice extends Component {
             </Card> 
             </Col>
             <Col lg={4} md={6} sm={6} xs={12} className="mb-3">
-            <Card className="flex-row front-office-main">
+            <Card className="front-office-main">
             <Media className="mediaMain">
   
                     <Media body>

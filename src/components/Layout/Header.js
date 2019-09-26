@@ -58,10 +58,9 @@ const useStyles = makeStyles({
 export default function TemporaryDrawer() {
   const classes = useStyles();
   const [state, setState] = React.useState({
-    top: false,
+   
     left: false,
-    bottom: false,
-    right: false,
+   
   });
 
   const toggleDrawer = (side, open) => event => {
@@ -85,7 +84,7 @@ export default function TemporaryDrawer() {
             Welcome Mr Bansal
           </span>
 
-          <span className="crossbtn" > <MdClose/></span>
+          <span className="crossbtn" onClick={toggleDrawer('left', false)}> <MdClose/></span>
     
   </div>
 
@@ -137,7 +136,7 @@ export default function TemporaryDrawer() {
       <Navbar expand navbar-inverse className="bgNav" ref={node => { this.node = node; }}>
          <Nav navbar navbar-fixed-top className="mr-2">
          <IconButton
-            color="inherit"
+            // color="inherit"
             aria-label="open drawer"
             onClick={toggleDrawer('left', true)}
             // edge="start"

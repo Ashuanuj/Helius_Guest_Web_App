@@ -64,7 +64,7 @@ export default class CheckoutPage extends React.Component{
                         </tr>
                         </tbody>
                     </Table>
-                    <Table className="tableRadio">
+                    <Table  responsive  className="tableRadio">
                         <tbody className="radio-div">
                             <tr>
                             <FormGroup row className="table-div">
@@ -76,7 +76,7 @@ export default class CheckoutPage extends React.Component{
                             <tr className="note-text"> <td>Instructions? E.g. Don’t ring the doorbell </td></tr>
                             <tr className="bill-amt">
                                 <td className="totaltext">Total Bill</td>
-                                <td className="totalamt"> $ 11.00 </td>
+                                <td className="totalamt"> $11.00 </td>
                             </tr>
                         </tbody>
                     </Table>

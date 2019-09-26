@@ -25,7 +25,7 @@ class ServicesPage extends React.Component {
         <Row className="ServicePageMain">
         <Col lg={4} md={6} sm={6} xs={12} className="mb-3">
           <Link to="/subcategorypages/mainsubcategorypage">
-          <Card className="flex-row card-serv-main">
+          <Card className="card-serv-main">
            <Media className="mediaMain">
               <Media left>
                 <Media object src={Image1} alt="image"/>
@@ -47,7 +47,7 @@ class ServicesPage extends React.Component {
         </Col>
 
         <Col lg={4} md={6} sm={6} xs={12} className="mb-3">
-          <Card className="flex-row card-serv-main">
+          <Card className="card-serv-main">
            <Media className="mediaMain">
               <Media left>
                 <Media object src={Image2} alt="image"/>
@@ -65,7 +65,7 @@ class ServicesPage extends React.Component {
           </Card>
         </Col>
         <Col lg={4} md={6} sm={6} xs={12} className="mb-3">
-          <Card className="flex-row card-serv-main">
+          <Card className="card-serv-main">
            <Media className="mediaMain">
               <Media left>
                 <Media object src={Image3} alt="image"/>
@@ -83,7 +83,7 @@ class ServicesPage extends React.Component {
           </Card>
         </Col>
         <Col lg={4} md={6} sm={6} xs={12} className="mb-3">
-          <Card className="flex-row card-serv-main">
+          <Card className="card-serv-main">
            <Media className="mediaMain">
               <Media left>
                 <Media object src={Image4} alt="image"/>
@@ -101,7 +101,7 @@ class ServicesPage extends React.Component {
           </Card>
         </Col>
         <Col lg={4} md={6} sm={6} xs={12} className="mb-3">
-          <Card className="flex-row card-serv-main">
+          <Card className="card-serv-main">
           <Media className="mediaMain">
               <Media left>
                 <Media object src={Image5} alt="image"/>
