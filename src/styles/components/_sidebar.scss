@@ -186,27 +186,88 @@
 .sidebar-text{
   font-size: 15px;
   font-weight: 700;
-  font-family: 'Neo Sans Pro, Medium';
+  font-family: 'Neo_Sans';
 }
 .sidebarImg-main{
   span{
-    margin-top: -40px;
     position: absolute;
-    left: 30px;
+    top:106px;
+    left: 45px;
     font-size: 18px;
     font-weight: 700;
-    font-family: 'Neo Sans Pro, Medium';
-
+    font-family: 'Neo_Sans';
+  }
+  .crossbtn{
+    position: absolute;
+    top:20px;
+    left: 200px;
+    z-index: 7;
+    color: #fff;
   }
 }
 
 .sidebarImg{
   background-position: center center;
   background-size: cover;
-  width: 260px;
+  width: 254px;
   height: 150px;
   background: linear-gradient(45deg, #10b7d2, #212529);
+
 }
+.MuiPaper-root{
+  background: #142A3B !important;
+  ul a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-family: Neo_Sans_Pro;
+    font-weight: 600;
+  }
+  .MuiListItemText-root{
+    text-align: center;
+  .MuiTypography-body1{
+    font-size: 15px;
+    font-family: Neo_Sans_Pro;
+    font-weight: 600;
+    color: #fff;
+  }
+}
+.makeStyles-list-1:hover{
+    border-color: #107bd2 1px solid;
+  }
+}
+.MuiList-root {
+  height: 66px;
+  border-bottom: 1px solid #1F3546; 
+  .MuiList-padding{
+    background: #1F3C53;
+  }
+
+}
+
+@media screen and (max-width:1440px){
+.sidebarImg-main{ 
+    .crossbtn {
+      display: none;
+  }
+}
+.bgNav {
+  width: 82%;
+}
+}
+
+@media screen and (max-width:768px){
+  .sidebarImg-main{ 
+      .crossbtn {
+        display: block;
+    }
+  }
+  .bgNav {
+    width: 100%;
+  }
+}
+  
 
 // @include gradient-y(#02aab0, #00cdac); // green beach
 // @include gradient-y(#348f50, #56b4d3); // emerald water

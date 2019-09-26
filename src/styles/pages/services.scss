@@ -25,12 +25,12 @@
         }
         .media-body{
                 font-size: 13px;
-                font-family: 'Open Sans';
+                font-family: 'Open_Sans';
                 font-style: regular;
                 margin-top: 10px;
             .media-heading{
                 font-size: 14px;
-                font-family: 'Neo Sans Pro,Medium';
+                font-family: 'Neo_Sans';
                 font-weight: 500;
                 margin-bottom: 0.5rem;
                 margin-top: 0.5rem;
@@ -38,7 +38,7 @@
             .sub-title{
                 color: #A2B0BA;
                 font-size: 13px;
-                font-family: 'Open Sans';
+                font-family: 'Open_Sans';
             }
         }
         .media-right{
@@ -71,7 +71,7 @@
                 margin-top: 10px;
             .media-heading{
                 font-size: 14px;
-                font-family: 'Neo Sans Pro,Medium';
+                font-family: 'Neo_Sans';
                 font-weight: 500;
                 margin-bottom: 0.2rem;
                 // margin-top: 0.2rem;
@@ -136,7 +136,7 @@
     background: #142A3B;
     padding: 24px;
     border: 1px solid #132431aa;
-    font-family: 'Open Sans';
+    font-family: 'Open_Sans';
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -306,11 +306,11 @@
         .label{
             font-size: 14px;
             font-weight: bold;
-            font-family: "Neo Sans Pro";
+            font-family: "Neo_Sans_Pro";
             padding-right: 10px;
         }
         .custom-control-label {
-        font-family: "Open Sans";
+        font-family: "Open_Sans";
         font-size: 12px;
         padding-top: 3px;
         }
@@ -324,14 +324,14 @@
         margin-bottom: 5px !important;
     }
     .note-text{
-        font-family: "Open Sans";
+        font-family: "Open_Sans";
         font-size: 14px;
         padding: 10px 20px;
         color: #A2B0BA;
     }
     .bill-amt{
         color: #fff;
-        font-size: "Open Sans";
+        font-size: "Open_Sans";
         .totaltext{
           font-weight: bold;
         }
@@ -343,7 +343,7 @@
 .confirmBtn-div{
     margin: 0 auto;
     .confirmBtn{
-        font-family: 'Open Sans';
+        font-family: 'Open_Sans';
         font-size: 14px;
         color: #fff;
         font-weight: bold;
@@ -356,7 +356,7 @@
     top:100px;
     .modal-header{
         .modal-title{
-        font-family: "Neo Sans";
+        font-family: "Neo_Sans";
         font-size: 16px;
         text-align: center;
         color: #000;
@@ -367,7 +367,7 @@
         }
     }
     .modal-body{
-        font-family: "Open Sans";
+        font-family: "Open_Sans";
         font-size: 12px;
         text-align: center;
         color:#A2B0BA;
@@ -402,7 +402,7 @@
     padding:7px 12px 10px 30px;
     .media-body{
         font-size: 13px;
-        font-family: 'Open Sans';
+        font-family: 'Open_Sans';
         font-style: regular;
     .media-heading{
         font-size: 16px;
@@ -413,7 +413,7 @@
     .sub-title{
         color: #A2B0BA;
         font-size: 13px;
-        font-family: 'Open Sans';
+        font-family: 'Open_Sans';
     }
     }
     .media-right{
@@ -436,7 +436,7 @@
         border-bottom: none;
         justify-content: center;
         .nav-item .nav-link{
-            font-family: 'Neo Sans Pro';
+            font-family: 'Neo_Sans_Pro';
             font-size: 12px;
             font-weight: 700;
             border: none;
@@ -462,7 +462,7 @@
         padding:10px 10px 10px 20px;
     .media-body{
         font-size: 13px;
-        font-family: 'Neo Sans Pro';
+        font-family: 'Neo_Sans_Pro';
         font-style: regular;
     .media-heading{
         font-size: 16px;
@@ -474,20 +474,20 @@
         display: block;
         color: #A2B0BA;
         font-size: 13px;
-        font-family: 'Open Sans';
+        font-family: 'Open_Sans';
         padding-bottom: 10px;
     }
     .sub-title2{
         display: block;
         color: #16B210;
         font-size: 13px;
-        font-family: 'Open Sans';
+        font-family: 'Open_Sans';
     }
     .sub-title3{
         display: block;
         color: #D60505;
         font-size: 13px;
-        font-family: 'Open Sans';
+        font-family: 'Open_Sans';
     }
     }
     .media-right{
@@ -503,4 +503,11 @@
         background: $blue;
     }
   }
+}
+
+// Collpase 
+#basicCollapse{
+    .TableMain .t-body td .qtybtn{
+        width: 70% !important;
+    }
 }

@@ -20,22 +20,16 @@ import IconButton from '@material-ui/core/IconButton';
 
 import componentImg from '../assets/img/bg/component.png'
 
-// import {MdClearAll, MdClose} from 'react-icons/md';
-// import {Button, 
-  // NavbarToggler,
-  // Nav,
-  // Navbar,
-  // NavItem,
-  // NavLink,
-  // Popover,
-  // PopoverBody,
-  // ListGroupItem,
-  // ListGroup
-// } from 'reactstrap';
+import {MdClose} from 'react-icons/md';
+import {
+  Nav,
+  Navbar,
+  NavItem
+} from 'reactstrap';
 // import bn from 'utils/bemnames';
-// import { FaShoppingCart } from 'react-icons/fa';
+import { FaShoppingCart} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-
+// const bem = bn.create('sidebar');
 
 // const bem = bn.create('header');
 
@@ -80,15 +74,19 @@ export default function TemporaryDrawer() {
 
   const sideList = side => (
   <>
-  <div className="sidebarImg-main">
-    <img
-      src={componentImg}
-      className="sidebarImg"
-      alt="cmp"
-    />
-    <span className="text-white">
-      Welcome Mr Bansal
-    </span>
+   
+        <div className="sidebarImg-main">
+          <img
+            src={componentImg}
+            className="sidebarImg"
+            alt="cmp"
+          />
+          <span className="headername text-white">
+            Welcome Mr Bansal
+          </span>
+
+          <span className="crossbtn" > <MdClose/></span>
+    
   </div>
 
     <div
@@ -110,7 +108,7 @@ export default function TemporaryDrawer() {
       </List>
       {/* <Divider /> */}
       <List>
-      <Link to="/myrequest">
+      <Link to="/requestmain">
         {['My Request'].map((text, index) => (
           <ListItem button key={text}>
             {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}
@@ -133,47 +131,12 @@ export default function TemporaryDrawer() {
     </>
   );
 
-  // const fullList = side => (
-  //   <div
-  //     className={classes.fullList}
-  //     role="presentation"
-  //     onClick={toggleDrawer(side, false)}
-  //     onKeyDown={toggleDrawer(side, false)}
-  //   >
-  //         <div className="sidebarImg-main">
-  //             <img
-  //               src={componentImg}
-  //               className="sidebarImg"
-  //               alt="cmp"
-  //             />
-  //             <span className="text-white">
-  //               Welcome Mr Bansal
-  //             </span>
-  //           </div>
-  //     <List>
-  //       {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-  //         <ListItem button key={text}>
-  //           <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-  //           <ListItemText primary={text} />
-  //         </ListItem>
-  //       ))}
-  //     </List>
-  //     <Divider />
-  //     <List>
-  //       {['All mail', 'Trash', 'Spam'].map((text, index) => (
-  //         <ListItem button key={text}>
-  //           <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-  //           <ListItemText primary={text} />
-  //         </ListItem>
-  //       ))}
-  //     </List>
-  //   </div>
-  // );
-
   return (
-    <div>
+    <div class="">
       {/* <Button onClick={toggleDrawer('left', true)}></Button> */}
-      <IconButton
+      <Navbar expand navbar-inverse className="bgNav" ref={node => { this.node = node; }}>
+         <Nav navbar navbar-fixed-top className="mr-2">
+         <IconButton
             color="inherit"
             aria-label="open drawer"
             onClick={toggleDrawer('left', true)}
@@ -182,6 +145,19 @@ export default function TemporaryDrawer() {
           >
             <MenuIcon />
           </IconButton>
+
+         </Nav>
+        <Nav className="Nav-Name">
+          Welcome Mr.Bansal
+        </Nav>
+
+     
+      <Nav navbar className='nav-right'>
+        <NavItem className="d-inline-flex">
+        <Link to="/checkout"><span> <FaShoppingCart size={25} style={{ color: '#fff' }} /></span></Link>         </NavItem>
+      </Nav>
+      </Navbar> 
+
       <Drawer open={state.left} onClose={toggleDrawer('left', false)}>
         {sideList('left')}
       </Drawer>

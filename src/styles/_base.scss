@@ -1,13 +1,21 @@
 
 @font-face {
-  font-family: Neo Sans, Neo Sans Pro, 'Open Sans';
+  font-family:  Neo_Sans;
   src: url("../components/assets/fonts/NeoSansPro-Medium.otf");
+}
+
+@font-face {
+  font-family:  Neo_Sans_Pro;
   src: url("../components/assets/fonts/NeoSansPro-Regular.otf");
+}
+
+@font-face {
+  font-family:  Open_Sans;
   src: url("../components/assets/fonts/OpenSans-Regular.ttf");
 }
 
 // @import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);
-@import url(https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+// @import url(https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
 
 /* Font Smoothing */
 body,
@@ -37,7 +45,7 @@ button,
   // -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   // font-family: Poppins, Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-family: Neo Sans ,Neo Sans Pro,"Neo Sans ,Neo Sans Pro OpenSans" "Medium, Regular";
+  font-family: Neo_Sans ,Neo_Sans_Pro,"Neo_Sans ,Neo_Sans_Pro Open_Sans" ;
   font-weight: $font-weight-normal;
 }
 

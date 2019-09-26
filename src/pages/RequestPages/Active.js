@@ -1,13 +1,13 @@
 import React from 'react';
 
-import {Row, Col, Card, Media} from 'reactstrap';
-import { MdKeyboardArrowRight } from 'react-icons/md';
+// import {Row, Col, Card, Media} from 'reactstrap';
+// import { MdKeyboardArrowRight } from 'react-icons/md';
 
-// import {Row, Col, Card, Media,Collapse,Table,NavLink as BSNavLink,} from 'reactstrap';
-// import { MdKeyboardArrowRight, MdKeyboardArrowDown } from 'react-icons/md';
+import {Row, Col, Card, Media,Collapse,Table} from 'reactstrap';
+import { MdKeyboardArrowRight, MdKeyboardArrowDown } from 'react-icons/md';
 
-// import vegImg from '../../components/assets/img/icons/veg.png';
-// import NonvegImg from '../../components/assets/img/icons/non-veg.png'
+import vegImg from '../../components/assets/img/icons/veg.png';
+import NonvegImg from '../../components/assets/img/icons/non-veg.png'
 
 
 // const navComponents = [
@@ -31,15 +31,17 @@ export default class Active extends React.Component{
     //       };
     //     });
     //   };
-      
+    state = { collapseID: "", } 
+    
+    toggleCollapse = collapseID => () => { this.setState(prevState => ({ collapseID: prevState.collapseID !== collapseID ? collapseID : "" })); }
     render(){
         return(
             <div>
                
                <Row className="ServicePageMain">
-                <Col lg={4} md={6} sm={6} xs={12} className="mb-3">
-
-                    <Card className="flex-row requestTab-main">
+                {/* <Col lg={4} md={6} sm={6} xs={12} className="mb-3"> */}
+                <Col md={6} sm={6} xs={12} className="mb-3">
+                    <Card className="requestTab-main">
                     <Media className="mediaMain">
                             <Media body>
                             <Media heading>
@@ -49,45 +51,14 @@ export default class Active extends React.Component{
                             <span className="sub-title2"> Request Received </span>
                             </Media>
                         <Media right>
-                        <MdKeyboardArrowRight/>
+                        {/* <MdKeyboardArrowRight/> */}
+                        <MdKeyboardArrowDown onClick={this.toggleCollapse("basicCollapse")} 
+                        style={{ transform: this.state.collapseID ? 'rotate(0deg)' : 'rotate(-90deg)', 
+                        transitionDuration: '0.3s', transitionProperty: 'transform', }} />
                         </Media>
                     </Media>
-                    </Card> 
-                </Col>
-                {/* <Col lg={12} md={12} sm={12} xs={12} className="mb-3">
-                    <Card className="flex-row requestTab-main">
-                    <Media className="mediaMain">
-                            <Media body>
-                            <Media heading>
-                            Order ID: 3458
-                            </Media>
-                            <span className="sub-title">23 Jun 2019 | 7:30am</span>
-                            <span className="sub-title2"> Request Received </span>
-                            </Media>
-                        <Media right>
-                             </Media>
-                    </Media>
-            <MdKeyboardArrowDown
-                  style={{
-                    padding: 0,
-                    transform: this.state.isOpenPages
-                      ? 'rotate(0deg)'
-                      : 'rotate(-90deg)',
-                    transitionDuration: '0.3s',
-                    transitionProperty: 'transform',
-                  }}
-            />
-            <Collapse isOpen={this.state.isOpenPages}>
-             {navComponents.map(({ exact }) => (
-                
-                  <BSNavLink
-                    
-                    activeClassName="active"
-                    exact={exact}
-                  >
-                                        
-                 
-            <Table responsive className="TableMain" >
+                    <Collapse id="basicCollapse" isOpen={this.state.collapseID} >
+                    <Table responsive className="TableMain" >
                         <tbody className="t-body">
                         <tr>
                             <td>  
@@ -96,7 +67,7 @@ export default class Active extends React.Component{
                             <td>  
                                 <div className="qtybtn"> 
                                     <span className="minus">-</span>
-                                    
+                                    {/* <span className="count"><input value="2"/></span> */}
                                     <span className="count">2</span>
                                     <span className="plus">+</span>
                                 </div>
@@ -119,7 +90,6 @@ export default class Active extends React.Component{
                         </tr>
                         </tbody>
                     </Table>
-             
                     <Table className="tableRadio">
                         <tbody className="radio-div">
                             <tr className="bill-amt">
@@ -128,15 +98,11 @@ export default class Active extends React.Component{
                             </tr>
                         </tbody>
                     </Table>
-                    
-                     </BSNavLink>
-               ))}
-            </Collapse>
-            </Card> 
+                    </Collapse>
+                    </Card> 
+                </Col>
 
-                </Col> */}
-
-                <Col lg={4} md={6} sm={6} xs={12} className="mb-3">
+                <Col md={6} sm={6} xs={12} className="mb-3">
                     <Card className="flex-row requestTab-main">
                     <Media className="mediaMain">
                             <Media body>
@@ -152,7 +118,7 @@ export default class Active extends React.Component{
                     </Media>
                     </Card> 
                 </Col>
-                <Col lg={4} md={6} sm={6} xs={12} className="mb-3">
+                <Col md={6} sm={6} xs={12} className="mb-3">
                     <Card className="flex-row requestTab-main">
                     <Media className="mediaMain">
                             <Media body>
