@@ -133,10 +133,13 @@ export default function TemporaryDrawer() {
   return (
     <div class="">
       {/* <Button onClick={toggleDrawer('left', true)}></Button> */}
+      {/* <div className="container-fluid"> */}
       <Navbar expand navbar-inverse className="bgNav" ref={node => { this.node = node; }}>
+        
          <Nav navbar navbar-fixed-top className="mr-2">
          <IconButton
             // color="inherit"
+            cursor= "pointer"
             aria-label="open drawer"
             onClick={toggleDrawer('left', true)}
             // edge="start"
@@ -155,7 +158,9 @@ export default function TemporaryDrawer() {
         <NavItem className="d-inline-flex">
         <Link to="/checkout"><span> <FaShoppingCart size={25} style={{ color: '#fff' }} /></span></Link>         </NavItem>
       </Nav>
+    
       </Navbar> 
+      {/* </div> */}
 
       <Drawer open={state.left} onClose={toggleDrawer('left', false)}>
         {sideList('left')}

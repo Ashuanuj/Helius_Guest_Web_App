@@ -131,14 +131,14 @@
     .ContinueBtn{
        background: #5FBAFE linear-gradient(180deg, #5FBAFE, #567CF8) repeat-x;
        float: right;
-       margin-top: -24px;
+    //    margin-top: -24px;
        color: #fff;
     }
     span{
         float: left;
     }
     background: #142A3B;
-    padding: 24px;
+    padding: 5px;
     border: 1px solid #132431aa;
     font-family: 'Open_Sans';
     font-size: 14px;
@@ -192,7 +192,9 @@
         flex-direction: row;
         position: absolute;
         bottom: 0;
+        left: 0;
         z-index: 1;
+        border: 0px;
      }
      //Wake up Request
      .WakeupRequestBtn-div{
@@ -213,9 +215,12 @@
         }
         //Add Item Continue btn
         .addItem-div{
+            width: 100%;
             flex-direction: row;
-            position: absolute;
+            // position: absolute;
+            position: fixed;
             bottom: 0;
+            left: 0;
             z-index: 1;
         }
     }
