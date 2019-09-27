@@ -68,28 +68,28 @@ export default class CheckoutPage extends React.Component{
                         <tbody className="radio-div">
                             <tr>
                             <FormGroup row className="table-div">
-                             <Label className="label" for="exampleCheckbox">Select a Slot : </Label>
+                            <Label className="label" for="exampleCheckbox">Select a Slot : </Label>
                                 <CustomInput type="radio" id="exampleCustomRadio" name="customRadio" label="Now" inline checked/>
                                 <CustomInput type="radio" id="exampleCustomRadio2" name="customRadio" label="Later" inline/>
                             </FormGroup>
                             </tr>
-                            <tr className="note-text"><span>Instructions? E.g. Don’t ring the doorbell</span> </tr>
+                                <tr className="note-text"><span>Instructions? E.g. Don’t ring the doorbell</span> </tr>
                             <tr className="bill-amt">
                                 <td className="totaltext">Total Bill</td>
                                 <td className="totalamt"> $11.00 </td>
                             </tr>
                         </tbody>
                     </Table>
-                    <div className="confirmBtn-div">
-                        <Button
-                            size="lg"
-                            className="confirmBtn bg-gradient-Requestbtn btn-outline-info border-0"
-                            block
-                            onClick={this.toggle}
-                            >
-                                Confirm Order
-                        </Button>
-                    </div>
+                        <div className="confirmBtn-div">
+                            <Button
+                                size="lg"
+                                className="confirmBtn bg-gradient-Requestbtn btn-outline-info border-0"
+                                block
+                                onClick={this.toggle}
+                                >
+                                    Confirm Order
+                            </Button>
+                        </div>
                 
                  </Row> 
                 </Page>

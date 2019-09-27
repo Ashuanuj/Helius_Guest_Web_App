@@ -12,9 +12,9 @@ import {Link} from 'react-router-dom';
 
 class DashboardPage extends React.Component {
   render(){
-      return(
-      <div>
-         <Page
+     return(
+     <div> 
+          <Page
             // className="ServicePage"
             // title="Services"
             // breadcrumbs={[{ name: 'Services', active: true }]}
@@ -115,8 +115,9 @@ class DashboardPage extends React.Component {
         </Col>
        </Row>
        </Page>
+     
       </div>
-      );
+    );
   }
 }
 

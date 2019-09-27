@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Row,Col,Card,Media} from 'reactstrap';
 import Page from '../components/Page';
 import {  MdKeyboardArrowRight } from 'react-icons/md';
 import {Link} from 'react-router-dom';
 
-class FrontOffice extends Component {
+
+class FrontOffice extends React.Component {
     render() {
       return (
-       <div className=''>
+       <div className=''> 
         <Page
         // className="ServicePage"
         // title="Services"

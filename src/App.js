@@ -7,6 +7,7 @@ import RequestFormPage from './pages/RequestFormPage'
 import React from 'react';
 import componentQueries from 'react-component-queries';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+// import { CSSTransition } from 'react-transition-group';
 import './styles/myStyles.scss';
 
 const DashboardPage = React.lazy(() => import('pages/DashboardPage'));
@@ -20,6 +21,12 @@ const RequestMain =  React.lazy(() => import('pages/RequestPages/RequestMain'));
 const getBasename = () => {
   return `/${process.env.PUBLIC_URL.split('/').pop()}`;
 };
+
+
+// const routes = [
+//   { path:"/dashboard", Component:DashboardPage },
+//   { path:"/services", Component:ServicesPage },
+// ]
 
 class App extends React.Component {
   render() {
@@ -46,7 +53,23 @@ class App extends React.Component {
             />
 
             <MainLayout breakpoint={this.props.breakpoint}>
-              <React.Suspense fallback={<PageSpinner />}>
+               <React.Suspense fallback={<PageSpinner />}>
+              {/* {routes.map(({ path, Component }) => (
+                  <Route key={path} exact path={path}>
+                    {({ match }) => (
+                      <CSSTransition
+                        in={match != null}
+                        timeout={300}
+                        classNames="page"
+                        unmountOnExit
+                      >
+                        <div className="page">
+                          <Component />
+                        </div>
+                      </CSSTransition>
+                    )}
+                  </Route>
+                ))} */}
                 <Route exact path="/dashboard" component={DashboardPage} />
                 <Route exact path="/services" component={ServicesPage} />
                 <Route exact path="/subcategorypages/mainsubcategorypage" component={MainSubcategoryPage} />

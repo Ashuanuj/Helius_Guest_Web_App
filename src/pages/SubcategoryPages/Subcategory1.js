@@ -30,7 +30,7 @@ class SubCategory1 extends Component {
                 </Media>
                 {/* <Link to="/subcategory2"> */}
                 <Media right>
-                  <Button className="addbtn">Add</Button>
+                  <Button className="addbtn ">Add</Button>
                 </Media>
                 {/* </Link> */}
            </Media>
