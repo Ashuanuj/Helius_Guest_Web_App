@@ -61,5 +61,12 @@ html, body{
   margin: 0;
   padding:0;
   height:100% !important;
-  // background-color: #142A3B;
+   background-color: #ffffff;
+}  
+
+
+@media screen and (max-width:765px) {
+  body{
+     background-color: #142A3B !important;
+}
 }

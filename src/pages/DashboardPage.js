@@ -10,10 +10,36 @@ import FileImage from '../components/assets/img/icons/file.svg';
 import Page from '../components/Page';
 import {Link} from 'react-router-dom';
 
-class DashboardPage extends React.Component {
-  render(){
-     return(
-     <div> 
+
+import { Transition } from 'react-transition-group';
+
+
+const duration = 200;
+const dd = 5;
+
+const defaultStyle = {
+  transition: `opacity ${duration}ms ease-in-out`,
+  opacity: 1,
+  animation:`fadeDown ${dd}s forwards`,
+}
+const transitionStyles = {
+  entering: { opacity: 1 },
+};
+
+const DashboardPage = ({ in: inProp }) => (
+     
+  <Transition in={inProp} timeout={duration}>
+
+{state => (
+<div style={{
+  ...defaultStyle,
+  ...transitionStyles[state]
+}}>
+
+{/* // class DashboardPage extends React.Component {
+//   render(){
+//      return(
+//      <div>  */}
           <Page
             // className="ServicePage"
             // title="Services"
@@ -115,10 +141,13 @@ class DashboardPage extends React.Component {
         </Col>
        </Row>
        </Page>
-     
-      </div>
-    );
-  }
-}
+       </div>
+    )}
+  </Transition>
+);
+//       </div>
+//     );
+//   }
+// } 
 
 export default  DashboardPage ;
