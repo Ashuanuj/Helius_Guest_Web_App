@@ -85,9 +85,13 @@
             .items-list{
                 display: block;
                 color: #A2B0BA;
+                font-size: 12px;
+                font-family: 'Open_Sans';
             }
             b{
                 display: block;
+                font-size: 14px;
+                font-family: 'Neo_Sans_Pro';
             }
         }
         .addbtn{
@@ -100,7 +104,8 @@
             border-color: #fff;
             padding: 4px 15px;
             border-radius: 20px;
-            font-size: 12px;
+            font-size: 13px;
+            font-family: 'Neo_Sans_Pro';
         }
         .qtybtn{
             // position: absolute;
@@ -111,20 +116,24 @@
             background: none;
             border: #fff 1px solid;
             border-radius: 20px;
-            padding: 4px 8px;
+            // padding: 4px 8px;
+            padding: 0px 4px;
             font-size: 12px;
             font-weight: 500;
             cursor: pointer;
             .minus{
                 padding: 5px 8px;
-                font-weight: 300
+                font-weight: 300;
+                font-size:22px;
             }
             .plus{
                 padding: 5px 8px;
-                font-weight: 300
+                font-weight: 300;
+                font-size: 19px;
             }
             .count{
                 padding: 5px 8px;
+                font-size: 13px;
             }
         }
 }
@@ -139,6 +148,7 @@
     span{
         float: left;
     }
+    padding-top: 10px;
     background: #142A3B;
     border-top: 1px solid #132431aa;
     font-family: 'Open_Sans';
@@ -220,6 +230,7 @@
         }
         //Add Item Continue btn
         .addItem-div{
+            padding-top: 5px;
             width: 100%;
             flex-direction: row;
             // position: absolute;
@@ -227,6 +238,9 @@
             bottom: 0;
             left: 0;
             z-index: 1;
+            :hover{
+                border-top: 1px solid #5FBAFE !important;
+            }
         }
     }
 
