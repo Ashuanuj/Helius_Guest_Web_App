@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Row, Card, CardImg} from 'reactstrap';
+import {Col, Row, Card,CardImg} from 'reactstrap';
 import RequestForm, {STATE_REQUEST_SUCCESS} from '../components/RequestForm'
 import componentImg from '../components/assets/img/bg/component.png'
 import Footer from '../components/Layout/Footer';

@@ -72,13 +72,20 @@
 }
   .cardImg{
     border-radius: 0px;
+    height: 300px;
   }
   .cardImgtext{
     // margin-top: -50px;
-    margin-top: 9em;
+    // margin-top: 9em;
+    // background: url('/src/components/assets/img/bg/component.png');
+    // padding: 90px 0;
     color: white;
     position: absolute;
-    z-index: 1;
+    top: 160px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
     .para{
       // top: 200px;
       // left: 0px;
@@ -107,10 +114,10 @@
       position: relative;
     }
     .cardImgtext{
-        margin-top:9em;
+        // margin-top:9em;
         color: white; 
         position: absolute;
-        z-index: 1;
+      
         .para{
             // top: 140px;
             // left: 172px;
@@ -143,7 +150,7 @@
         // margin-top: -50px;
         position: absolute;
         color: white;
-        z-index: 1;
+    
        
         // top: 285px;
         // left: 138px;
