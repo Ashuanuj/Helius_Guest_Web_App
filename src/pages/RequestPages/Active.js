@@ -89,8 +89,8 @@ export default class Active extends React.Component{
                         <tbody className="radio-div">
                             <tr className="bill-amt">
                                 <td className="totaltext">Total Bill</td>
-                                <td></td>
-                                <td className="totalamt"> $11.00 </td>
+                                <td>-</td>
+                                <td className="totalamt1"> $11.00 </td>
                             </tr>
                         </tbody>
                     </Table>

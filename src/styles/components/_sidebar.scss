@@ -215,6 +215,7 @@
   background: linear-gradient(45deg, #10b7d2, #212529);
 
 }
+// Sidebar ListItem
 .MuiPaper-root{
   background: #142A3B !important;
   ul a{
@@ -234,10 +235,14 @@
     color: #fff;
   }
 }
-.makeStyles-list-1:hover{
-    border-color: #107bd2 1px solid;
+
+  .makeStyles-list-1 {
+    ul:hover{
+      border-color: #107bd2 1px solid;
+    }
   }
 }
+
 .MuiList-root {
   height: 66px;
   border-bottom: 1px solid #1F3546; 

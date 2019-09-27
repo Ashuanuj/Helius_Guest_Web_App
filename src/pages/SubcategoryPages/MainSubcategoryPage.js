@@ -48,6 +48,14 @@ export default class MainSubcategoryPage extends React.Component {
               Dosa Special
             </NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink
+              className={classnames({ active: this.state.activeTab === '3' })}
+              onClick={() => { this.toggle('3'); }}
+            >
+              Meals
+            </NavLink>
+          </NavItem>
         </Nav>
         </div>
         <div className="sometext">

@@ -11,6 +11,7 @@
     }
     a{
         text-decoration: none;
+        color: #fff;
     }
 }
 .card-serv-main{
@@ -139,8 +140,7 @@
         float: left;
     }
     background: #142A3B;
-    padding: 5px;
-    border: 1px solid #132431aa;
+    border-top: 1px solid #132431aa;
     font-family: 'Open_Sans';
     font-size: 14px;
     font-weight: bold;
@@ -196,6 +196,10 @@
         left: 0;
         z-index: 1;
         border: 0px;
+        .confirmBtn{
+            border-radius: 0 !important;
+        }
+        
      }
      //Wake up Request
      .WakeupRequestBtn-div{
@@ -321,13 +325,15 @@
     }
     .table-div{
         display: flex;
-        padding: 10px 30px;
+        padding: 10px;
+        padding-left: 30px;
         color: #fff;
         .label{
             font-size: 14px;
             font-weight: bold;
             font-family: "Neo_Sans_Pro";
             padding-right: 10px;
+            padding-top: 3px;
         }
         .custom-control-label {
         font-family: "Open_Sans";
@@ -346,18 +352,25 @@
     .note-text{
         font-family: "Open_Sans";
         font-size: 12px;
-        padding: 10px 20px;
         color: #A2B0BA;
-        td{
-            width: 100%;
+        span{
+            display: block;
+            padding: 10px 12px;
         }
     }
     .bill-amt{
         .totalamt{
-        color: #fff;
-        font-size: "Open_Sans";
-          font-weight: 400;
-          font-size: 13px;
+            color: #fff;
+            font-size: "Open_Sans";
+            font-weight: 400;
+            font-size: 13px;
+        }
+        .totalamt1{
+            color: #fff;
+            font-size: "Open_Sans";
+            font-weight: 400;
+            font-size: 13px;
+            text-align: center;
         }
         .totaltext{
             color: #fff;

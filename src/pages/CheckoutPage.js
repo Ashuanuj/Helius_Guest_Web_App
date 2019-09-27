@@ -73,7 +73,7 @@ export default class CheckoutPage extends React.Component{
                                 <CustomInput type="radio" id="exampleCustomRadio2" name="customRadio" label="Later" inline/>
                             </FormGroup>
                             </tr>
-                            <tr className="note-text"> <td>Instructions? E.g. Don’t ring the doorbell </td></tr>
+                            <tr className="note-text"><span>Instructions? E.g. Don’t ring the doorbell</span> </tr>
                             <tr className="bill-amt">
                                 <td className="totaltext">Total Bill</td>
                                 <td className="totalamt"> $11.00 </td>

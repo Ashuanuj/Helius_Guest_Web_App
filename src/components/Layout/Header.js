@@ -55,7 +55,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function TemporaryDrawer() {
+export default function Header() {
   const classes = useStyles();
   const [state, setState] = React.useState({
    
@@ -96,32 +96,38 @@ export default function TemporaryDrawer() {
     >
       <List>
         <Link to="/services">
-        {['Service'].map((text, index) => (
+        {['Service'].map((text) => (
           <ListItem button key={text}>
-            {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}
             <ListItemText primary={text} />
           </ListItem>
         ))}
         </Link>
 
+        {/* <Link to="/services">
+        {['Service'].map((text, index) => (
+          <ListItem button key={text}>
+            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
+        </Link> */}
+
       </List>
       {/* <Divider /> */}
       <List>
       <Link to="/requestmain">
-        {['My Request'].map((text, index) => (
+        {['My Request'].map((text) => (
           <ListItem button key={text}>
-            {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}
-            <ListItemText primary={text} />
+             <ListItemText primary={text} />
           </ListItem>
         ))}
         </Link>
       </List>
       <List>
       <Link to="/">
-        {['Logout'].map((text, index) => (
+        {['Logout'].map((text) => (
           <ListItem button key={text}>
-            {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}
-            <ListItemText primary={text} />
+              <ListItemText primary={text} />
           </ListItem>
         ))}
         </Link>
@@ -131,12 +137,12 @@ export default function TemporaryDrawer() {
   );
 
   return (
-    <div class="">
+    <div>
       {/* <Button onClick={toggleDrawer('left', true)}></Button> */}
-      {/* <div className="container-fluid"> */}
-      <Navbar expand navbar-inverse className="bgNav" ref={node => { this.node = node; }}>
+     
+      <Navbar expand className="bgNav" ref={node => { this.node = node; }}>
         
-         <Nav navbar navbar-fixed-top className="mr-2">
+         <Nav navbar className="mr-2">
          <IconButton
             // color="inherit"
             cursor= "pointer"
@@ -160,8 +166,7 @@ export default function TemporaryDrawer() {
       </Nav>
     
       </Navbar> 
-      {/* </div> */}
-
+     
       <Drawer open={state.left} onClose={toggleDrawer('left', false)}>
         {sideList('left')}
       </Drawer>
