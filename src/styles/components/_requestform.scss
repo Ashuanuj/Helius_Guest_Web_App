@@ -105,6 +105,12 @@
     }
   }
 
+  @media screen and (max-width:765px) {
+    body{
+       background-color: #142A3B !important;
+  }
+  }
+
   @media screen and (min-width:360px) and (max-width:640px){
 
     .card{
