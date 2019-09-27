@@ -3,12 +3,32 @@ import { Row,Col,Card,Media} from 'reactstrap';
 import Page from '../components/Page';
 import {  MdKeyboardArrowRight } from 'react-icons/md';
 import {Link} from 'react-router-dom';
+import { Transition } from 'react-transition-group';
 
+const duration = 200;
 
-class FrontOffice extends React.Component {
-    render() {
-      return (
-       <div className=''> 
+const defaultStyle = {
+  transition: `opacity ${duration}ms ease-in-out`,
+  opacity: 1,
+ }
+const transitionStyles = {
+  entering: { opacity: 1 },
+};
+
+const FrontOffice = ({ in: inProp }) => (
+     
+    <Transition in={inProp} timeout={duration}>
+ 
+  {state => (
+  <div style={{
+    ...defaultStyle,
+    ...transitionStyles[state]
+  }}>
+
+{/* // class FrontOffice extends React.Component { */}
+{/* //     render() { */}
+{/* //       return (
+//        <div className=''>  */}
         <Page
         // className="ServicePage"
         // title="Services"
@@ -69,9 +89,13 @@ class FrontOffice extends React.Component {
             </Col>
           </Row>
         </Page>
-     </div>
-    );
-  }
-}
+{/* //      </div>
+//     );
+//   }
+// } */}
+</div>
+)}
+</Transition>
+);
 
 export default FrontOffice;
