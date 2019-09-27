@@ -21,7 +21,7 @@
   border: 1px solid #1F3C53;
 }
 .form-control:focus{
-  border: none;
+  border: 1px solid transparent;
   transition:none;
 }
 
