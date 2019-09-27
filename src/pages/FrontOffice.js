@@ -5,12 +5,12 @@ import {  MdKeyboardArrowRight } from 'react-icons/md';
 import {Link} from 'react-router-dom';
 import { Transition } from 'react-transition-group';
 
-const duration = 200;
+const duration = 100;
 
-const defaultStyle = {
-  transition: `opacity ${duration}ms ease-in-out`,
-  opacity: 1,
- }
+// const defaultStyle = {
+//   transition: `opacity ${duration}ms ease-in-out`,
+//   opacity: 1,
+//  }
 const transitionStyles = {
   entering: { opacity: 1 },
 };
@@ -21,7 +21,7 @@ const FrontOffice = ({ in: inProp }) => (
  
   {state => (
   <div style={{
-    ...defaultStyle,
+    
     ...transitionStyles[state]
   }}>
 
