@@ -140,9 +140,9 @@ export default function Header() {
     <div>
       {/* <Button onClick={toggleDrawer('left', true)}></Button> */}
      
-      <Navbar expand className="bgNav" ref={node => { this.node = node; }}>
+      <Navbar expand className="bgNav">
         
-         <Nav navbar className="mr-2">
+         <Nav navbar className="">
          <IconButton
             // color="inherit"
             cursor= "pointer"
